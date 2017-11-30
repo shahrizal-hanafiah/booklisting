@@ -1,0 +1,11 @@
+<div class="panel panel-default margin-space">
+  <div class="panel-heading">{{ book.title }}</div>
+  <div class="panel-body">
+    <b>Author</b>: {{ book.author }} <br>
+    <b>Published year</b> : {{ book.publishedYear }} <br>
+    <b>Description</b> : {{ book.description }} <br>
+  </div>
+  <a [routerLink]="['../../']" preserveQueryParams preserveFragment style="margin-left:12px;">
+    << Back
+  </a>
+</div>

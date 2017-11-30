@@ -1,0 +1,29 @@
+<div>
+    <h1 style="text-align:center">
+      Welcome to {{ title }}
+    </h1>
+    
+    <div class="table-responsive table-listing">
+      <table class="col-md-12 table table-bordered">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Hits</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let book of listBooks;let i = index">
+            <th scope="row">{{i + 1}}</th>
+            <td>{{ book.title }}</td>
+            <td class="col-md-8">{{ book.description.substring(0,100) }}..</td>
+            <td>{{ book.hits }}</td>            
+            <!-- <td><a href="#" routerLink="/details">Details</a></td> -->
+            <td class="col-md-1"><button class="btn btn-default" (click)="goToDetails(book.id)">Details</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
