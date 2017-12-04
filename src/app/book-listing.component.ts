@@ -22,7 +22,10 @@ export class BookListingComponent implements OnInit {
   ngOnInit() {
     this.listBooks = BOOKS;
   }
-
+/**
+ * Go to book details and store hits in local storage
+ * @param id GUID formatted in string 
+ */
   goToDetails(id: string) {
     var hit = (parseInt(localStorage[id]) || 0);
     hit += 1;
