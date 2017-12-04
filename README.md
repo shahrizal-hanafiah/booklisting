@@ -1,5 +1,9 @@
 # BookListings
 
+This Project to create a simple list view (parent component). 
+The list will contain Books (child components), with some details in the display, like Book title, Description, Author, Published year. 
+There should be a BookCount field on the parent component that gets updated with the total number of books selected in the list, onclick of a Book. 
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.4.
 
 ## Development server
